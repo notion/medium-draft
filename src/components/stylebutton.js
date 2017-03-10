@@ -38,6 +38,9 @@ StyleButton.propTypes = {
   style: PropTypes.string,
   active: PropTypes.bool,
   icon: PropTypes.string,
-  label: PropTypes.string,
+  label: PropTypes.oneOf([
+    PropTypes.string,
+    PropTypes.element,
+  ]),
   description: PropTypes.string,
 };
