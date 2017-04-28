@@ -1,6 +1,7 @@
 // import './addbutton.scss';
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import { getSelectedBlockNode } from '../util';

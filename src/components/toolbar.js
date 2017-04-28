@@ -1,6 +1,7 @@
 // import './toolbar.scss';
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { Entity } from 'draft-js';
 
@@ -342,4 +343,3 @@ export const INLINE_BUTTONS = [
   //   style: 'CODE',
   //   description: 'Inline Code',
   // },
-
