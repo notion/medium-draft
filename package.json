@@ -1,6 +1,6 @@
 {
   "name": "notion-medium-draft",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "A medium like rich text editor built upon draft-js with an emphasis on eliminating mouse usage by adding relevant keyboard shortcuts",
   "main": "lib/index.js",
   "scripts": {
