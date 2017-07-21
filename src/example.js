@@ -154,9 +154,9 @@ class SeparatorSideButton extends React.Component {
 class EmbedSideButton extends React.Component {
 
   static propTypes = {
-    setEditorState: React.PropTypes.func,
-    getEditorState: React.PropTypes.func,
-    close: React.PropTypes.func,
+    setEditorState: PropTypes.func,
+    getEditorState: PropTypes.func,
+    close: PropTypes.func,
   };
 
   constructor(props) {
@@ -204,7 +204,7 @@ class EmbedSideButton extends React.Component {
 class AtomicEmbedComponent extends React.Component {
 
   static propTypes = {
-    data: React.PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired,
   }
 
   constructor(props) {
