@@ -1,3 +1,7 @@
+### 0.4.6
+
+- Removed `React.PropTypes` and using `prop-types` package
+
 ### 0.4.0
 
 - Updated to use draft-js v0.9.1
