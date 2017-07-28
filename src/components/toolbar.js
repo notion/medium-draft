@@ -7,6 +7,7 @@ import { Entity } from 'draft-js';
 
 import BlockToolbar from './blocktoolbar';
 import InlineToolbar from './inlinetoolbar';
+import CustomToolbar from './customtoolbar';
 
 import { getSelection, getSelectionRect } from '../util/index';
 import { getCurrentBlock } from '../model/index';
@@ -21,6 +22,7 @@ export default class Toolbar extends React.Component {
     toggleInlineStyle: PropTypes.func,
     inlineButtons: PropTypes.arrayOf(PropTypes.object),
     blockButtons: PropTypes.arrayOf(PropTypes.object),
+    customButtons: PropTypes.arrayOf(PropTypes.object),
     editorNode: PropTypes.object,
     setLink: PropTypes.func,
     focus: PropTypes.func,
@@ -29,6 +31,7 @@ export default class Toolbar extends React.Component {
   static defaultProps = {
     blockButtons: BLOCK_BUTTONS,
     inlineButtons: INLINE_BUTTONS,
+    customButtons: [],
   };
 
   constructor(props) {
@@ -250,6 +253,11 @@ export default class Toolbar extends React.Component {
             editorState={editorState}
             onToggle={this.props.toggleInlineStyle}
             buttons={this.props.inlineButtons}
+          />
+        ) : null}
+        {this.props.customButtons.length > 0 ? (
+          <CustomToolbar
+            buttons={this.props.customButtons}
           />
         ) : null}
         {hasHyperLink && (
